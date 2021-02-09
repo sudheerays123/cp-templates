@@ -11,7 +11,7 @@ void dfs(ll s){
     if(visited[s] == true) return;
     visited[s] = true;
     
-    // explore s
+    // process node s
     
     for(auto u : adj[s]) dfs(u);
     
