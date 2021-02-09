@@ -13,11 +13,8 @@ void dfs(ll s){
     
     // explore s
     
-    for(auto u : adj[s]){
-        if(visited[u] == false){
-            dfs(u);
-        }
-    }
+    for(auto u : adj[s]) dfs(u);
+    
 }
 
 int main() {
