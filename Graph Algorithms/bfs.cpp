@@ -4,7 +4,7 @@ using namespace std;
 #define N 105
 
 vector<ll> adj[N];
-vector<ll> dist(N);
+vector<ll> dist(N,INF);
 
 void bfs(ll s){
 
@@ -24,7 +24,7 @@ void bfs(ll s){
 
         for(auto u : adj[a]){
 
-            if(visited[u]) continue;
+            if(visited[u] == true ) continue;
             visited[u] = true;
 
             dist[u] = dist[a] + 1;
