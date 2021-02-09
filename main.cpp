@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define fast ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-typedef long long int ll;
+#define ll long long int
 #define tc ll test;cin >> test;while(test--)
 #define vi vector<ll>
 #define pb push_back
@@ -19,6 +19,7 @@ typedef long long int ll;
 #define print(x) for(auto i : x ) cout out i spacef
 #define mmax(x,i) x = max(x,i)
 #define mmin(x,i) x = min(x,i)
+#define N 100005
 
 int main() {
 
