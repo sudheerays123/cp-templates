@@ -1,21 +1,22 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long int
-#define MOD 13371337
+#define MOD 1000000007
 
-ll power(ll x, ll y , ll mod){
+ll power(ll x, ll y){
 
     if(y == 1) return x;
 
-    ll res = (power(x, y / 2 , mod)) % mod;
+    ll res = (power(x, y/2))%MOD;
 
-    if(y % 2 == 1) return ((res * res * x) % mod);
-    return ((res * res) % mod);
+    if(y % 2 == 1) return ((res * res * x) % MOD);
+    else return ((res * res) % MOD);
+    
 }
 
 int main() {
 
-    ll p = power(a,b,MOD);
+    ll p = power(a,b);
 
     return 0;
 }
