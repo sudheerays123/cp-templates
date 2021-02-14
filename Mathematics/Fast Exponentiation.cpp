@@ -1,6 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
+#include <bits/stdc++.h>
 using namespace std;
 #define ll long long int
 #define MOD 13371337
@@ -17,7 +15,7 @@ ll power(ll x, ll y , ll mod){
 
 int main() {
 
-    ll p = power(2,9,MOD);
+    ll p = power(a,b,MOD);
 
     return 0;
 }
